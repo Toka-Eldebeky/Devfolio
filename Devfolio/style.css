@@ -1,0 +1,534 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Serif', serif;
+    font-style: normal;
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: #0078ff;
+    --second-color: #1E1E1E;
+}
+
+.border-main {
+    border-color: var(--main-color) !important;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.nav-item .nav-link {
+    position: relative;
+}
+
+.nav-link::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: var(--main-color);
+    bottom: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.card-body a {
+    text-decoration: none;
+}
+
+.nav-link:hover::before {
+    width: 70%;
+}
+
+.home {
+    background-image: url(./imgs/hero-bg.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.about h1 {
+    position: relative;
+}
+
+.Feedback h2 {
+    position: relative;
+}
+
+.Feedback .first-line p {
+    position: relative;
+}
+
+.line-under::before {
+    content: "";
+    width: 120px;
+    height: 3px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: 2px;
+}
+
+.main-title::after {
+    content: "";
+    width: 40px;
+    height: 5px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.layout {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: xx-large;
+}
+
+.layout h1 {
+    font-size: 250%;
+}
+
+.typing {
+    width: 100%;
+    font-size: 200%;
+}
+
+.typing::before {
+    content: "";
+    text-transform: capitalize;
+    animation: typing 15s infinite;
+}
+
+.progress .w-85 {
+    width: 85%;
+}
+
+.progress .w-90 {
+    width: 90%;
+}
+
+.numbers {
+    background-image: url(./imgs/counters-bg.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.numbers .layer .around {
+    border: 10px solid rgb(196, 228, 255) !important;
+}
+
+.layer {
+    background-color: #0077ff;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+}
+
+.services .border-icon-main {
+    border: 10px solid white;
+    transition: all 0.5s ease-in-out;
+}
+
+.services .shadow:hover .border-icon-main {
+    border-color: rgb(127, 184, 245) !important;
+    color: white;
+    background-color: var(--main-color);
+}
+
+.PORTFOLIO .box-port:hover img {
+    transition: all 1s ease-in-out;
+}
+
+.PORTFOLIO .box-port:hover img {
+    transform: scale(1.5, 1.5);
+    overflow: hidden;
+}
+
+.PORTFOLIO .plus .bold {
+    border: 3px solid !important;
+}
+
+.Work {
+    color: white;
+    background-image: url(./imgs/overlay-bg.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.Work .layer {
+    position: absolute;
+}
+
+.Feedback {
+    background-image: url(./imgs/overlay-bg.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.Feedback .icon-footer .border-icon {
+    border: 2px solid var(--main-color);
+    padding-top: 27px;
+    padding-left: 5px;
+    padding-right: 2px;
+    padding-bottom: 17px;
+    border-radius: 50%;
+}
+
+.data-bs-target {
+    width: 25px;
+    height: 25px;
+}
+
+
+/* .Feedback .layer {
+    position: absolute;
+} */
+
+
+/* .Feedback>p .line-under {
+    content: "";
+    width: 40px;
+    height: 5px;
+    background-color: yellow;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+
+.Feedback .contact .row {
+    background-color: white;
+}
+
+.Feedback .border-color {
+    border: 3px solid #0077ff;
+}
+
+.Feedback .icon-footer.icon-circl {
+    width: 10px;
+    height: 10px;
+    border: 2px solid blue;
+}
+
+.footer {
+    background-color: #025cc3;
+}
+
+
+/* .services .main-title h1:before {
+    height: 3px;
+    width: 20px;
+    background-color: var(--main-color);
+} */
+
+@keyframes typing {
+    1% {
+        content: "F|";
+    }
+    2% {
+        content: "Fr|";
+    }
+    3% {
+        content: "Fre|";
+    }
+    4% {
+        content: "Free|";
+    }
+    5% {
+        content: "Freel|";
+    }
+    6% {
+        content: "Freela|";
+    }
+    7% {
+        content: "Freelan|";
+    }
+    8% {
+        content: "Freelanc|";
+    }
+    9% {
+        content: "Freelance|";
+    }
+    10% {
+        content: "Freelancer|";
+    }
+    11% {
+        content: "Freelancer ";
+    }
+    12% {
+        content: "Freelancer|";
+    }
+    13% {
+        content: "Freelancer ";
+    }
+    14% {
+        content: "Freelancer|";
+    }
+    15% {
+        content: "Freelancer";
+    }
+    16% {
+        content: "Freelance|";
+    }
+    17% {
+        content: "Freelanc|";
+    }
+    18% {
+        content: "Freelan|";
+    }
+    19% {
+        content: "Freela|";
+    }
+    20% {
+        content: "Freel|";
+    }
+    21% {
+        content: "Free|";
+    }
+    22% {
+        content: "Fre|";
+    }
+    23% {
+        content: "Fr|";
+    }
+    24% {
+        content: "F|";
+    }
+    25% {
+        content: "|";
+    }
+    26% {
+        content: "d|";
+    }
+    27% {
+        content: "de|";
+    }
+    28% {
+        content: "des|";
+    }
+    29% {
+        content: "desi|";
+    }
+    30% {
+        content: "desig|";
+    }
+    31% {
+        content: "design|";
+    }
+    32% {
+        content: "designe|";
+    }
+    33% {
+        content: "designer|";
+    }
+    34% {
+        content: "designer ";
+    }
+    35% {
+        content: "designer|";
+    }
+    36% {
+        content: "designer ";
+    }
+    37% {
+        content: "designer|";
+    }
+    38% {
+        content: "designe|";
+    }
+    39% {
+        content: "design|";
+    }
+    40% {
+        content: "desig|";
+    }
+    41% {
+        content: "desi|";
+    }
+    42% {
+        content: "des|";
+    }
+    43% {
+        content: "de|";
+    }
+    44% {
+        content: "d|";
+    }
+    45% {
+        content: "|";
+    }
+    46% {
+        content: "p|";
+    }
+    47% {
+        content: "ph|";
+    }
+    48% {
+        content: "pho|";
+    }
+    49% {
+        content: "phot|";
+    }
+    50% {
+        content: "photo|";
+    }
+    51% {
+        content: "photog|";
+    }
+    52% {
+        content: "photogr|";
+    }
+    53% {
+        content: "photogra|";
+    }
+    54% {
+        content: "photograp|";
+    }
+    55% {
+        content: "photograph|";
+    }
+    56% {
+        content: "photographe|";
+    }
+    57% {
+        content: "photographer|";
+    }
+    58% {
+        content: "photographer ";
+    }
+    59% {
+        content: "photographer|";
+    }
+    60% {
+        content: "photographer ";
+    }
+    61% {
+        content: "photographer|";
+    }
+    62% {
+        content: "photographe|";
+    }
+    63% {
+        content: "photograph|";
+    }
+    64% {
+        content: "photograp|";
+    }
+    65% {
+        content: "photogra|";
+    }
+    66% {
+        content: "photogr|";
+    }
+    67% {
+        content: "photog|";
+    }
+    68% {
+        content: "photo|";
+    }
+    69% {
+        content: "phot|";
+    }
+    70% {
+        content: "pho|";
+    }
+    71% {
+        content: "ph|";
+    }
+    72% {
+        content: "p|";
+    }
+    73% {
+        content: "|";
+    }
+    74% {
+        content: "d|";
+    }
+    75% {
+        content: "de|";
+    }
+    76% {
+        content: "dev|";
+    }
+    77% {
+        content: "deve|";
+    }
+    78% {
+        content: "devel|";
+    }
+    79% {
+        content: "develo|";
+    }
+    80% {
+        content: "develop|";
+    }
+    81% {
+        content: "develope|";
+    }
+    82% {
+        content: "developer|";
+    }
+    83% {
+        content: "developer ";
+    }
+    84% {
+        content: "developer|";
+    }
+    85% {
+        content: "developer ";
+    }
+    86% {
+        content: "developer|";
+    }
+    87% {
+        content: "develope|";
+    }
+    88% {
+        content: "develop|";
+    }
+    89% {
+        content: "develo|";
+    }
+    90% {
+        content: "devel|";
+    }
+    91% {
+        content: "deve|";
+    }
+    92% {
+        content: "dev|";
+    }
+    93% {
+        content: "de|";
+    }
+    94% {
+        content: "d|";
+    }
+    95% {
+        content: "|";
+    }
+    96% {
+        content: "";
+    }
+    97% {
+        content: "|";
+    }
+    98% {
+        content: "";
+    }
+    99% {
+        content: "|";
+    }
+    100% {
+        content: "";
+    }
+}
